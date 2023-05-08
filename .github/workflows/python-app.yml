@@ -1,0 +1,43 @@
+import requests
+from requests.sessions import session
+import json
+import time
+import colorama
+from colorama import Fore, Back, Style
+
+colorama.init()
+
+session = requests.session()
+print(Fore.GREEN + """ 
+      _ _                         __ _      _     
+     (_) |                       / _(_)    | |    
+  ___ _| |_   ____ _ _ __   ___ | |_ _  ___| |__  
+ / __| | \ \ / / _` | '_ \ / _ \|  _| |/ __| '_ \ 
+ \__ \ | |\ V / (_| | | | | (_) | | | | (__| | | |
+ |___/_|_| \_/ \__,_|_| |_|\___/|_| |_|\___|_| |_|""")
+print("USE A VPN TO PREVENT THE IP BAN")
+print("TIKTOK REPORT BOT")
+print("Join the discord for Updates: https://discord.gg/cCKUGqWP9V ")
+print("a report is sent every 10 seconds")
+print("")
+print("")
+
+x = input('Enter the request URL from Inspect Element: ')
+print("")
+print("")
+
+print('Reporting...')
+print('')
+print('')
+
+while True:
+    req = session.post(x)
+    
+    print(req.text)
+    print('reported :D')
+
+    time.sleep(10)
+
+
+input()
+
